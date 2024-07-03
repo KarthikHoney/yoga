@@ -1,0 +1,133 @@
+.flexbox{
+  display: flex;
+}
+main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar{
+  background-color: aqua;
+  min-height: 100vh;
+}
+.top_section{
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.bars{
+  display: flex;
+  margin-left: 30px;
+  font-size: 25px;
+}
+.form-control{
+  border: none;
+}
+.link{
+  display: flex;
+  font-size: 25px;
+  padding: 5px 15px;
+  gap: 15px;
+  transition: all 0.3s;
+}
+.link:hover{
+  background-color: #000;
+  color: #fff;
+}
+.active{
+  background-color: #000;
+  color: #fff;
+}
+.icon, .link_text{
+  font-size: 20px;
+}
+table{
+  border-collapse:collapse;
+}
+table,tr,th,td{
+  border: 1px solid #000;
+  padding: 10px;
+}
+ button{
+  cursor: pointer;
+}
+.search-input{
+  width: 30%;
+  float: inline-end;
+  outline: none;
+  border: 1px solid #000;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/*Dashboard*/
+.dashboard-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.total-members{
+  width: 250px;
+  height: 120px;
+  background-color: black;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+/*login form*/
+.login-page{
+  background-image: url('../src/assets/img/loginbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.login-page  form{
+  max-width: 100%;
+  width: 40%;
+  padding: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 3px #ffe5e580;
+  color: #000000;
+}
+.login-page label{
+  font-size: 17px;
+  font-weight: 500;
+}
+.parentname{
+  font-size: 16px !important;
+}
+
+.login-page input,select,textarea{
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+.login-page button{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+@media(max-width:1400px){
+  .login-page form{
+    width: 60%;
+  }
+}
+
+@media(max-width:992px){
+  .login-page form{
+    width: auto;
+  }
+}
